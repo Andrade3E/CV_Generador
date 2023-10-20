@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pngegg.png">
+    <title>Generador de CV</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <center><img class="logo_uno" src="logo_cv.png"><img class="logo" src="pngegg.png"></center>
+        </div>
+        <div class="row header_dos">
+            <nav class="MENU">
+				<UL>
+					<li>Opciones
+                      <ul>                 
+                      	<li> <a href="#">Inglés</a></li>                    
+                      	<li><a href="#">Español</a></li>
+                      	<li> <a href="#">Acerca De</a></li>
+                      </ul>
+					</li>
+				</UL>
+			</nav>
+        </div>
+        <div class="row content">
+            <div class="col-xl-8 col-12 content_one">
+                <strong>Nombre </strong><input type="text" placeholder="Juan Carmelo"><br>
+                <strong>Apellido Materno </strong><input type="text" placeholder="Ramirez"><br>
+                <strong>Apellido Paterno </strong><input type="text" placeholder="Alvarado"><br>
+                <br><strong>Seleccione el nivel de estudios que tiene: </strong><br>
+                <div class="col-12 content_two">
+                    <input type="radio" name="estudios" value="1"> Primaria<br>
+                    <input type="radio" name="estudios" value="2"> Secundaria<br>
+                    <input type="radio" name="estudios" value="3"> Preparatoria<br>
+                    <input type="radio" name="estudios" value="4"> Universidad<br>
+                </div>
+                <strong>Carrera </strong><input class="carrera" type="text" placeholder="Ingeniería en Sistemas Computacionales"><br>
+                <br><strong>Seleccione su país </strong>
+                <select name="pais">
+                    <option value="1">Argentina</option>
+                    <option value="2">España</option>
+                    <option value="3">México</option>
+                    <option value="4">Guatemala</option>
+                    <option value="5">Honduras</option>
+                    <option value="7">El Salvador</option>
+                    <option value="8">Venezuela</option>
+                    <option value="9">Colombia</option>
+                    <option value="10">Cuba</option>
+                    <option value="11">Bolivia</option>
+                    <option value="13">Perú</option>
+                    <option value="14">Ecuador</option>
+                    <option value="15">Paraguay</option>
+                    <option value="16">Uruguay</option>
+                    <option value="17">Chile</option>
+                  </select>
+            </div>
+            <div class="col-xl-4 col-12 img_file">
+                <input type="file" class="new_profile">
+            </div>
+            <div class="col-12 button">
+                <a href="vista_final.html"><input type="submit" class="bt_enviar" placeholder="Enviar"></a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
